@@ -1,0 +1,13 @@
+ROUTINE Exercicio4
+Exercicio4
+ Read "digite a metricula do aluno: ", matricula, !
+ Read "digite o nome completo do aluno: ", nome, !
+ Read "digite o telefone do aluno: ", telefone, !
+ Read "digite a data de nascimento do aluno: ", nasc, !
+ Read "digite o sexo do aluno: ", sexo, !
+ 
+ w "digite a metricula do aluno: ", matricula, !
+ w "digite o nome completo do aluno: ", nome, !
+ w "digite o telefone do aluno: ", telefone, !
+ w "digite a data de nascimento do aluno: ", nasc, !
+ w "digite o sexo do aluno: ", sexo, !

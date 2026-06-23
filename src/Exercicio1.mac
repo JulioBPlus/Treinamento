@@ -1,0 +1,7 @@
+ROUTINE Exercicio1
+Exercicio1
+    Read "Digite o valor de x: ", x
+    Read "Digite o valor de y: ", y
+    for num=x:1:y{
+        if num# 2 = 0 write num_" Esse numero e par"
+    }

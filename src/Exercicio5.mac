@@ -1,0 +1,22 @@
+ROUTINE Exercicio5
+Exercicio5
+ read "Digite a quantidade de alunos para cadastros: ", quantidade
+ 
+ for x=1:1:quantidade{
+	 w "Digite os dados do aluno"_x,!
+	 read "digite a matricula do aluno: ", ^tAluno(x,"matricula"),!
+	 read "digite a nome do aluno: ", ^tAluno(x,"nome"),!
+	 read "digite a telefone do aluno: ", ^tAluno(x,"telefone"),!
+	 read "digite a nascimento do aluno: ", ^tAluno(x,"nasc"),!
+	 read "digite a sexo do aluno: ", ^tAluno(x,"sexo"),!
+ }
+ for x=1:1:quantidade{
+	 w "Digite os dados do aluno"_x,!
+	 w "digite a matricula do aluno: ", ^Aluno(x,"matricula"),!
+	 w "digite a nome do aluno: ", ^tAluno(x,"nome"),!
+	 w "digite a telefone do aluno: ", ^tAluno(x,"telefone"),!
+	 w "digite a nascimento do aluno: ", ^tAluno(x,"nasc"),!
+	 w "digite a sexo do aluno: ", ^tAluno(x,"sexo"),!,!
+ }
+ 
+ 
