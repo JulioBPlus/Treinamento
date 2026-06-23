@@ -1,0 +1,6 @@
+ROUTINE Exercicio6
+Exercicio6
+	set data = "12/06/2005"
+	w $ZDATEH(data,4),!
+	w $ZDATE($ZDATEH(data,4), 18),!
+	w $PIECE($ZDATE($ZDATEH(data,4), 18)," ",2),!
