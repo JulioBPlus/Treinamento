@@ -1,0 +1,49 @@
+ROUTINE ExercicioObj
+ExercicioObj
+    kill ^Treinamento.Data.CursoD
+    kill ^Treinamento.Data.InstrutorD
+    kill ^Treinamento.Data.TurmaD
+    kill ^Treinamento.Data.AlunoD
+   
+    set Curso = ##class(Treinamento.Data.Curso).%New()
+    set Curso.Nome = "Caché"
+    set Curso.Duracao = 40
+    set Curso.Preco = 1500
+    set status = Curso.%Save()
+ 
+    set Instrutor = ##class(Treinamento.Data.Instrutor).%New()
+    set Instrutor.Nome = "Julio"
+    set Instrutor.Matricula = 1978
+    set status = Instrutor.%Save()
+ 
+    set Aluno1 = ##class(Treinamento.Data.Aluno).%New()
+    set Aluno1.Nome = "Júnior"
+    set Aluno1.Matricula = 1958
+    set Aluno1.Idade = 21
+    set status = Aluno1.%Save()
+    write "Salvando aluno 1"
+ 
+    set Aluno2 = ##class(Treinamento.Data.Aluno).%New()
+    set Aluno2.Nome = "Juca"
+    set Aluno2.Matricula = 1999
+    set Aluno2.Idade = 22
+    set status = Aluno2.%Save()
+    write "Salvando aluno 2"
+ 
+    set Aluno3 = ##class(Treinamento.Data.Aluno).%New()
+    set Aluno3.Nome = "Juliano"
+    set Aluno3.Matricula = 2001
+    set Aluno3.Idade = 28
+    set status = Aluno3.%Save()
+    write "Salvando aluno 3"
+ 
+    set turma = ##class(Treinamento.Data.Turma).%New()
+    set turma.DataInicio = ""
+    set turma.Status = "imcompleta"
+    set turma.Curso = Curso
+    set turma.Instrutor = Instrutor
+    Do turma.Alunos.Insert(Aluno1)
+    Do turma.Alunos.Insert(Aluno2)
+    Do turma.Alunos.Insert(Aluno3)
+    set status = turma.%Save()
+    write "Salvando Turma"

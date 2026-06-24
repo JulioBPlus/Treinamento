@@ -2,6 +2,7 @@ Class Treinamento.Data.Instrutor Extends (%Persistent, %XML.Adaptor)
 {
 
 Property Nome As %String(MAXLEN = 50);
+
 Property Matricula As %String(MAXLEN = 20);
 
 
